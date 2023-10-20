@@ -1,0 +1,56 @@
+.moviedetail{
+    color: white;
+    margin-top: 50px;
+}
+.movieotherdetail {
+    display: flex;
+    color: grey;
+    gap: 15px;
+    font-size: 15px;
+}
+.moviedetail i{
+    color: #3182ED;
+}
+.blank{
+    border: 1px solid #3182ED;
+}
+
+.movieposter{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    
+}
+.movieposter img{
+    max-width: 350px;
+    border-radius: 30px;
+}
+.moviedescription{
+    color: white;
+    margin-top: 30px;
+    font-size: 15px;
+}
+@media screen and (max-width:550px){
+    .movieposter img{
+        width: 90vw;
+    }
+    .movieotherdetail {
+        font-size: 3vw;
+    }
+    .moviedetail h2{
+        font-size: 8vw;
+    }
+}
+.others{
+    color: #3182ED;
+    padding-top: 5vw;
+}
+.movies-card-5{
+    /* border-top: 1px solid #161F2E; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-evenly;
+    /* margin-top: 5vw; */
+    /* padding-top: 5vw; */
+}

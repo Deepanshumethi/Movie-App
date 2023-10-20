@@ -1,0 +1,131 @@
+.liveshowtext{
+    color: white;
+    font-size: 30px;
+    margin-top: 40px ;
+    margin-bottom: 40px;
+}
+.liveshowlist{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: space-evenly;
+}
+.liveshowimg{
+    position: relative;
+    width: 300px;
+     height: 80%;
+   overflow: hidden;
+   border-radius: 30px;
+   /* border: 1px solid red; */
+}
+.liveshowcard{
+    /* border: 1px solid red; */
+    display: flex;
+    /* flex-grow: 1;
+    flex-basis: 350px; */
+    padding-top: 20px;
+    /* padding-right: 20px; */
+    /* max-width: 350px; */
+    width: 300px;
+     height: 280px;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+.liveshowimg img{
+    border-radius: 30px;
+
+    width: 300px;
+     height: 100%;
+     /* border: 1px solid red; */
+   /* overflow: hidden; */
+     z-index: -10;
+    /* width: fit-content; */
+    /* justify-content: center; */
+    transition: all 0.5s;
+}
+
+.liveshowothr{
+    position: absolute;
+    z-index: 100;
+    color: black;
+    top: 0;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    /* gap: 100%; */
+    padding: 20px 25px;
+    justify-content:space-between;
+    /* border: 10px solid red; */
+}
+.livebox{
+    background-color:#EB5656;
+    /* opacity: 0.8; */
+    width: fit-content;
+    color: white;
+    font-size: 10px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+.viewerbox{
+    background-color: #131720;
+    color: white;
+    opacity: 0.8;
+    padding: 5px 10px;
+    font-size: 15px;
+    border-radius: 20px;
+}
+
+.liveplay{
+    position: absolute;
+    z-index: 10;
+    top: 40%;
+    /* border: 2px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* right: -50%; */
+    color: white;
+    font-size: 50px;
+    opacity: 0.7;
+    display: none;
+}
+.liveshowcard:hover .liveplay{
+    display: flex;
+    justify-content: center;
+}
+.liveshowcard:hover .liveshowimg img{
+    transform: scale(1.2);
+}
+
+.liveshowdetail{
+    /* width: 100%; */
+    /* border: 1px solid red; */
+    color: white;
+    display: flex;
+    
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+.liveshowcard:hover .liveshowdetail{
+    color:#3182ED;
+}
+.livechannelname {
+    width: 50px ;
+    height: 50px;
+    border-radius: 10px;
+}
+.livechannelname img{
+    width: 40px ;
+    height:40px;
+    border-radius: 10px;
+}
+.livename{
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 30px;
+}
