@@ -8,7 +8,7 @@ function Main() {
     console.log(input.search)
     setSinputearch(input.search)
   }
-  console.log(inputSearch);
+  // console.log(inputSearch);
   return (
     <div id='main'>
       <Nav search={value} />
