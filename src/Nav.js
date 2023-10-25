@@ -7,9 +7,8 @@ function Nav(props) {
     navigate('/');
   }
   const[currentsearch,setCurrentsearch]=useState("");
-  function handleSearchChange() {
-    // setCurrentsearch(event.target.value);
-   setCurrentsearch( document.getElementsByClassName("search")[0].value);
+  function handleSearchChange(event) {
+    setCurrentsearch(event.target.value);
     let input={search:currentsearch}
   props.search(input)
   }
@@ -41,8 +40,8 @@ function Nav(props) {
        
         <div className='searchandsingin'>
          
-          <form id='form' onSubmit={handleSearchChange} >
-          <input className="search" type='search' placeholder="i'm looking for..." value={currentsearch}></input>
+          <form id='form'>
+          <input className="search" type='search' placeholder="i'm looking for..." onChange={handleSearchChange} value={currentsearch}></input>
             <i className="fa-solid fa-magnifying-glass icon"></i>
           </form>
          
