@@ -14,8 +14,8 @@ function Moviepage() {
   return (
     <div>
         {
-        inputSearch==" "? <div><Nav  search={value} />
-        <Moviedetailpage/></div>: <div><Nav search={value} />
+        inputSearch==" "? <div><Nav  search={value} searchvisible={"true"}/>
+        <Moviedetailpage/></div>:<div><Nav search={value} searchvisible={"true"}/>
         <Searchpage search={inputSearch}/></div>
        }
     </div>

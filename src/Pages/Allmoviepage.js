@@ -6,7 +6,7 @@ import Searchpage from './Searchpage';
 function Allmoviepage() {
   const [inputSearch, setSinputearch] = useState(" ");
   function value(input) {
-    console.log(input.search)
+    // console.log(input.search)
     setSinputearch(input.search)
   }
   return (

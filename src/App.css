@@ -128,6 +128,7 @@ form {
     list-style: none;
 text-align: center;
 color: white;
+transition: all ease-in-out 1s;
 /* display: none; */
 }
 .navlinkhamber li{
@@ -136,6 +137,11 @@ color: white;
 }
 .navlinkhamber li:hover{
     color: #3182ED;
+}
+@media screen and (min-width:856px){
+    .navlinkhamber{
+        display: none !important;
+    }
 }
 /* poster css */
 .poster {

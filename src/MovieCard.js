@@ -4,8 +4,10 @@ import ScrollToTop from './ScrolltoTop';
 function MovieCard(props) {
     // key={value.id} title={value.original_title} image={value.poster_path}
     const navigate = useNavigate();
-  function handlePage(event){
+  function handlePage(){
     navigate('/MovieDetails' ,{state:props.moviedata});
+    console.log("Card click kia")
+    console.log(props.moviedata)
   }
  
     return (
@@ -22,8 +24,9 @@ function MovieCard(props) {
                 </div>
                 <div className='onmoviecmlcardhover'>
                     <div className='onhoveritem'>
-                    <i className="fa-solid fa-bookmark"></i>
-                        <i className="fa-solid fa-star"><span>{props.moviedata.vote_average}</span></i>
+                    {/* <i className="fa-solid fa-bookmark"></i> */}
+                    
+                        <i className="fa-solid fa-star"><span> {props.moviedata.vote_average}</span></i>
                     </div>
 
                 </div>

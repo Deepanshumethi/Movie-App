@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState,useEffect } from 'react';
 import MovieCard from '../MovieCard';
+import Nav from '../Nav';
 function Searchpage(props) {
 
         const [search,setSearch]=useState("");
@@ -17,11 +18,14 @@ function Searchpage(props) {
             });
     }, [search]);
   return (
-    <div className='moviecards'>
+    <>
+        {/* <Nav/> */}
+        <div className='moviecards'>
     {data.results.map((value) => (
         <MovieCard moviedata={value}/>
     ))}
 </div>
+    </>
   )
 }
 
